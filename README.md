@@ -1,8 +1,8 @@
+[![CI/CD](https://github.com/behrouz-rad/rad-log-viewer/actions/workflows/ci.yml/badge.svg)](https://github.com/behrouz-rad/rad-log-viewer/actions/workflows/ci.yml)
+
 # Rad Log Viewer
 
 A cross-platform desktop application for viewing and analyzing structured JSON log files.
-
-![RadLogViewer](https://github.com/user-attachments/assets/d7ad7fcd-e01c-4bd9-af39-856573170ba5)
 
 ## Features
 
