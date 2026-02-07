@@ -1,4 +1,8 @@
-[![CI/CD](https://github.com/behrouz-rad/rad-log-viewer/actions/workflows/ci.yml/badge.svg)](https://github.com/behrouz-rad/rad-log-viewer/actions/workflows/ci.yml)
+﻿[![CI/CD](https://github.com/behrouz-rad/rad-log-viewer/actions/workflows/ci.yml/badge.svg)](https://github.com/behrouz-rad/rad-log-viewer/actions/workflows/ci.yml)
+![.NET](https://img.shields.io/badge/.NET-10-512BD4?logo=dotnet)
+![Windows](https://img.shields.io/badge/platform-Windows-blue?logo=windows)
+![Linux](https://img.shields.io/badge/platform-Linux-black?logo=linux)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 # Rad Log Viewer
 
