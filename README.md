@@ -4,6 +4,8 @@
 
 A cross-platform desktop application for viewing and analyzing structured JSON log files.
 
+<img width="1543" height="1485" alt="rad" src="https://github.com/user-attachments/assets/ccef0e3c-d342-4285-aead-b476166cb10b" />
+
 ## Features
 
 - **JSON Log Parsing**: Efficiently parse and display structured JSON log files
