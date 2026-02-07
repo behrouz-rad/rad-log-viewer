@@ -14,11 +14,11 @@ on:
 
 jobs:
   init:
-    runs-on: windows-2022
+    runs-on: windows-2025
     steps:
       - run: echo "Set global variables"
     outputs:
-      dotnet-version: 9.0.302
+      dotnet-version: 10.0.x
       solution: Rad.LogViewer.sln
       app-project: src/Rad.LogViewer.App/Rad.LogViewer.App.csproj
       test-project: tests/Rad.LogViewer.Tests/Rad.LogViewer.Tests.csproj
@@ -27,13 +27,13 @@ jobs:
     needs: [init]
     strategy:
       matrix:
-        os: [windows-2022, ubuntu-22.04]
+        os: [windows-2025, ubuntu-24.04]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: ${{ needs.init.outputs.dotnet-version }}
 
@@ -52,12 +52,12 @@ jobs:
     permissions:
       contents: write # permission to allow creation of a release
 
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: ${{ needs.init.outputs.dotnet-version }}
 

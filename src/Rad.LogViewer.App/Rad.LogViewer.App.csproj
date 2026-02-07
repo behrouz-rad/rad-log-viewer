@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFrameworks>net9.0;net10.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -11,7 +11,7 @@
     <!-- Assembly attributes -->
     <!-- https://github.com/dotnet/sdk/blob/460bff1c9e39948a9620f2216f428d60751395ec/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.GenerateAssemblyInfo.targets#L75 -->
     <Company>Behrouz Rad</Company>
-    <Copyright>© 2025 Behrouz Rad</Copyright>
+    <Copyright>© 2026 Behrouz Rad</Copyright>
     <FileVersion>$(Version)</FileVersion>
     <Product>Rad Log Viewer</Product>
     <Description>A cross-platform desktop application for viewing and analyzing structured JSON log files</Description>
