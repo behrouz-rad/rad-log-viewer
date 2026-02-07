@@ -73,10 +73,10 @@ jobs:
           fi
 
       - name: Publish Windows
-        run: dotnet publish ${{ needs.init.outputs.app-project }} --configuration Release --runtime win-x64 --self-contained true --output ./publish/win-x64 -p:Version=${{ steps.version.outputs.number }}
+        run: dotnet publish ${{ needs.init.outputs.app-project }} --configuration Release --framework net10.0 --runtime win-x64 --self-contained true --output ./publish/win-x64 -p:Version=${{ steps.version.outputs.number }}
 
       - name: Publish Linux
-        run: dotnet publish ${{ needs.init.outputs.app-project }} --configuration Release --runtime linux-x64 --self-contained true --output ./publish/linux-x64 -p:Version=${{ steps.version.outputs.number }}
+        run: dotnet publish ${{ needs.init.outputs.app-project }} --configuration Release --framework net10.0 --runtime linux-x64 --self-contained true --output ./publish/linux-x64 -p:Version=${{ steps.version.outputs.number }}
 
       - name: Create archives
         run: |
